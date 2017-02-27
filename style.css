@@ -1,0 +1,164 @@
+body{
+	background-color: black;
+	font-family: sans-serif;
+}
+
+#bg{
+	color: #158673;
+	position: fixed;
+	line-height: .5;
+	top: 0;
+	left: 0;
+	white-space: pre-wrap;
+	text-shadow: 0px 5px 10px #50A798, 
+				-5px 0px 10px #50A798, 
+				 5px 0px 10px #50A798, 
+				 0px -5px 10px #50A798, 
+				 0px 10px 10px #005244, 
+			   -10px 0px 10px #005244, 
+				10px 0px 10px #005244,
+				 0px -10px 10px #005244,
+				 0px 0px 1px #fff;
+	}
+
+.outline{
+	border: 4px solid #158673;
+	width: 670px;
+	height: 700px;
+	background-color: black;
+	position: relative;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 1px 1px 20px 1px rgba(21,134,115,.8), 1px 1px 20px 1px rgba(21,134,115,.6) inset;
+	-moz-box-shadow: 1px 1px 20px 1px rgba(21,134,115,.8), 1px 1px 20px 1px rgba(21,134,115,.6) inset;
+	box-shadow: 1px 1px 20px 1px rgba(21,134,115,.8), 1px 1px 20px 1px rgba(21,134,115,.6) inset;
+	margin: 0 auto;
+	overflow: scroll;
+}
+
+.outline::-webkit-scrollbar{
+	display: none;
+}
+
+.outline:-webkit-scrollbar{
+	display: none;
+}
+
+.inline{
+	position: fixed;
+	width: 250px;
+	height: 680px;
+	margin: 6px 0 0 10px;
+	border: 2px solid #158673;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 1px 1px 20px 1px rgba(21,134,115,.8);
+	-moz-box-shadow: 1px 1px 20px 1px rgba(21,134,115,.8);
+	box-shadow: 1px 1px 20px 1px rgba(21,134,115,.8);
+	background-color: #005244;
+}
+
+.textRight{
+	color: #50A798;
+	text-shadow: 0px 5px 10px #50A798, 
+				-5px 0px 10px #50A798, 
+				 5px 0px 10px #50A798, 
+				 0px -5px 10px #50A798, 
+				 0px 10px 10px #005244, 
+			   -10px 0px 10px #005244, 
+				10px 0px 10px #005244,
+				 0px -10px 10px #005244,
+				 0px 0px 1px #fff;
+	margin-top: 5px;
+	margin-left: 625px;			
+}
+
+.bottomBricks{
+	margin-top: 700px;
+	height: 90px;
+	width: 391px;
+	float: right;
+}
+
+.brick{
+	cursor: pointer;
+	width: 80px;
+	height: 80px;
+	margin: 5px;
+	display: inline-block;
+	background-color: #005244;
+	border: 2px solid #50A798;				
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 1px 1px 20px 1px rgba(0, 82, 68, 1);
+	-moz-box-shadow: 1px 1px 20px 1px rgba(0, 82, 68, 1);
+	box-shadow: 1px 1px 20px 1px rgba(0, 82, 68, 1);
+	-webkit-transition: background-color .5s, border .5s, box-shadow .5s;
+	-moz-transition: background-color .5s, border .5s, box-shadow .5s;
+	transition: background-color .5s, border .5s, box-shadow .5s;
+}
+
+.brick:hover{
+	background-color: #50A798;
+	border: 2px solid #005244;
+	-webkit-box-shadow: 1px 1px 10px 1px rgba(80,167,152, .8);
+	-moz-box-shadow: 1px 1px 10px 1px rgba(80, 167, 152, .8);
+	box-shadow: 1px 1px 10px 1px rgba(80, 167, 152, .8);
+}
+
+@keyframes aniTwinkle{
+	0%{
+		text-shadow: 0px 5px 10px #50A798, 
+					-5px 0px 10px #50A798, 
+					 5px 0px 10px #50A798, 
+					 0px -5px 10px #50A798, 
+					 0px 10px 10px #005244, 
+				   -10px 0px 10px #005244, 
+					10px 0px 10px #005244,
+					 0px -10px 10px #005244,
+					 0px 0px 1px #fff;
+	}
+	25%{
+		text-shadow: 0px 5px 10px #50A798, 
+					-10px 0px 15px #50A798, 
+					10px 0px 15px #50A798, 
+					0px -5px 15px #50A798, 
+					0px 10px 15px #005244, 
+					-15px 0px 15px #005244, 
+					15px 0px 15px #005244,
+					0px -10px 15px #005244,
+					0px 0px 1px #fff;
+	}
+	50%{
+		text-shadow: 0px 5px 20px #50A798, 
+					-15px 0px 20px #50A798, 
+					 15px 0px 20px #50A798, 
+					 0px -5px 20px #50A798, 
+					 0px 10px 20px #005244, 
+				   -20px 0px 20px #005244, 
+					20px 0px 20px #005244,
+					 0px -10px 20px #005244,
+					 0px 0px 1px #fff;
+	}
+	75%{
+		text-shadow: 0px 5px 15px #50A798, 
+					-10px 0px 15px #50A798, 
+					 10px 0px 15px #50A798, 
+					 0px -5px 15px #50A798, 
+					 0px 10px 15px #005244, 
+					-15px 0px 15px #005244, 
+					15px 0px 15px #005244,
+					0px -10px 15px #005244,
+					0px 0px 1px #fff;
+	}
+}
+
+.twinkle{
+	animation-name: aniTwinkle;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;				
+	transition: text-shadow .5s;				
+}
